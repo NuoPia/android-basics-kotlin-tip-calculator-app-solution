@@ -143,5 +143,41 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/calculate_button"
             tools:text="Tip Amount: $10" />
+
+        <Button
+          android:id="@+id/calculate_button_primary"
+          style="@style/Widget.Elephunk.Button.FilledButton"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:text="@string/calculate"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@id/round_up_switch"
+          app:layout_constraintTop_toBottomOf="@id/tip_result" />
+
+        <Button
+          android:id="@+id/calculate_button_outlined"
+          style="@style/Widget.Elephunk.Button.OutlinedButton"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:text="@string/calculate"
+          app:icon="@drawable/ic_round_up"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@id/round_up_switch"
+          app:layout_constraintTop_toBottomOf="@id/calculate_button_primary" />
+
+        <Button
+          android:id="@+id/calculate_button_text"
+          style="@style/Widget.Elephunk.Button.TextButton"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:text="@string/calculate"
+          app:iconGravity="end"
+          app:icon="@drawable/ic_round_up"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@id/round_up_switch"
+          app:layout_constraintTop_toBottomOf="@id/calculate_button_outlined" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
